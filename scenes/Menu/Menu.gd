@@ -15,3 +15,11 @@ func count_new_instance():
 	$CountLabel.text = "Cantidad de instancias: " + String(instancesCount)
 	pass
 	
+
+func _on_VioletGenerator_button_down():
+	count_new_instance()
+	pass 
+
+func _on_RedGenerator_button_down():
+	count_new_instance()
+	pass 
