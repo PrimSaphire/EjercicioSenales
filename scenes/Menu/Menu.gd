@@ -14,7 +14,6 @@ func count_new_instance():
 	instancesCount += 1
 	$CountLabel.text = "Cantidad de instancias: " + String(instancesCount)
 	pass
-	
 
 func _on_VioletGenerator_button_down():
 	count_new_instance()
@@ -23,3 +22,9 @@ func _on_VioletGenerator_button_down():
 func _on_RedGenerator_button_down():
 	count_new_instance()
 	pass 
+
+func delete():
+	instancesCount = 0 
+	$CountLabel.text = "Cantidad de instancias: " + String(instancesCount)
+	pass
+	
